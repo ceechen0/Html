@@ -1,0 +1,2172 @@
+* {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        /* TopNode */
+
+
+        /*备用第二个导航栏*/
+        .TopNode-Copy {
+            height: 56px;
+            display: none;
+        }
+
+        .TopNode {
+            width: 100%;
+            height: 56px;
+            background: #303440;
+            top: 0;
+            z-index: 103;
+        }
+
+        .TopNode .TopCenter {
+            width: 1206px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .TopNode .TopCenter .logo {
+            float: left;
+            margin-top: 14px;
+        }
+
+        .TopNode .TopCenter .SearchNode {
+            width: 357px;
+            height: 36px;
+            float: left;
+            border: 1px solid #191b2e;
+            border-radius: 18px;
+            background: #ffffff;
+            margin: 9px 0 0 17px;
+            /* overflow: hidden; */
+            cursor: pointer;
+            position: relative;
+        }
+
+        .TopNode .TopCenter .SearchNode .Choice.Active {
+            color: #4eae54;
+            background: url(../image/jt-b2.gif)no-repeat right 14px;
+        }
+
+        .TopNode .TopCenter .SearchNode .Choice {
+            font-size: 14px;
+            color: #686868;
+            float: left;
+            line-height: 36px;
+            height: 100%;
+            width: 44px;
+            background: url(../image/jt-b.gif) no-repeat right 14px;
+            margin-left: 18px;
+            position: relative;
+        }
+
+        .TopNode .TopCenter .SearchNode .Choice .Choice-Ul {
+            position: absolute;
+            width: 60px;
+            height: 84px;
+            background: #fff;
+            z-index: 101;
+            left: -18px;
+            top: 35px;
+            box-shadow: 0 0 3px #ccc;
+            border-radius: 3px;
+            padding-top: 4px;
+            display: none;
+        }
+
+        .TopNode .TopCenter .SearchNode .Choice .Choice-Ul>li {
+            float: left;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 13px;
+            text-align: center;
+            color: #313a3f;
+        }
+
+        .TopNode .TopCenter .SearchNode .Choice .Choice-Ul>li:hover {
+            color: #58b35e;
+        }
+
+        .TopNode .TopCenter .SearchNode .Choice .Choice-Ul>li.Active {
+            background: #f5f5f5;
+            color: #58b35e;
+
+        }
+
+        .TopNode .TopCenter .SearchNode .Input {
+            float: left;
+            border: none;
+            outline: none;
+            line-height: 36px;
+            font-size: 15px;
+            margin-left: 14px;
+            width: 198px;
+            height: 36px;
+            color: #a2a2a2;
+        }
+
+        .TopNode .TopCenter .SearchNode .SearchNode-Ol {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            background: #fff;
+            left: 18px;
+            top: 40px;
+            z-index: 102;
+            box-shadow: 0 0 5px #ccc;
+            cursor: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: none;
+        }
+
+        .TopNode .TopCenter .SearchNode .SearchNode-Ol li {
+            float: left;
+            height: 40px;
+            width: 100%;
+            font-size: 12px;
+            line-height: 40px;
+            text-indent: 16px;
+        }
+
+        .TopNode .TopCenter .SearchNode .SearchNode-Ol li  a {
+            float: left;
+            width: 100%;
+            height: 100%;
+            color: #3d3d3d;
+            font-size: 14px;
+        }
+
+        .TopNode .TopCenter .SearchNode .SearchNode-Ol li  a:hover {
+            color:#3aa54e ;
+            background: #f3f3f4;
+        }
+
+        .TopNode .TopCenter .SearchNode .Search {
+            width: 80px;
+            height: 100%;
+            float: right;
+            background: url(../image/search.gif)no-repeat 10px center #4aaf4f;
+            line-height: 36px;
+            text-indent: 29px;
+            font-size: 15px;
+            color: white;
+            border-radius: 0 18px  18px 0;
+        }
+
+        .TopNode .TopCenter .TopBanner {
+            height: 100%;
+            float: left;
+            margin-left: 31px;
+        }
+
+        .TopNode .TopCenter .TopBanner ul {
+            float: left;
+        }
+
+        .TopNode .TopCenter .TopBanner li {
+            float: left;
+            line-height: 56px;
+            height: 100%;
+            margin: 0 9px;
+            color: #f9f9fa;
+            font-size: 14px;
+            cursor: pointer;
+            text-shadow: 0 0 1px #0f1422;
+            position: relative;
+
+        }
+
+        .TopNode .TopCenter .TopBanner li:hover span {
+            color: #4ca753;
+        }
+
+        .TopNode .TopCenter .TopBanner li>.Bottom-Line {
+            position: absolute;
+            width: 24px;
+            height: 3px;
+            background: #45b14a;
+            z-index: 10;
+            bottom: 0;
+            left: 50%;
+            margin-left: -12px;
+            display: none;
+        }
+
+        .TopNode .TopCenter .TopBanner li:hover>.Bottom-Line {
+            display: block;
+        }
+
+        .TopNode .TopCenter .TopBanner li.DownLoad {
+            padding-left: 18px;
+            background: url(../image/download.gif) no-repeat left center;
+        }
+
+        .TopNode .TopCenter .TopBanner li.DownLoad:hover {
+            background: url(../image/download-h.gif) no-repeat left center;
+        }
+
+        .TopNode .TopCenter .TopBanner li.DownLoad .DownLoad-Show {
+            position: absolute;
+            width: 350px;
+            height: 180px;
+            border:1px solid #d5d5db;
+            background: #fff;
+            z-index: 11;
+            top: 50px;
+            left: -128px;
+            display: none;
+            cursor: auto;
+        }
+
+        .TopNode .TopCenter .TopBanner li.DownLoad .DownLoad-Show .DownLoad-Show-Left {
+            float: left;
+            width: 180px;
+            height: 100%;
+        }
+
+        .TopNode .TopCenter .TopBanner li.DownLoad .DownLoad-Show .DownLoad-Show-Left img {
+            float: left;
+            margin-top: 23px;
+            margin-left: 23px;
+        }
+
+        .TopNode .TopCenter .TopBanner li.DownLoad .DownLoad-Show .DownLoad-Show-Name {
+            float: left;
+            width: 170px;
+            color: #544c47;
+            font-size: 17px;
+            height: 17px;
+            line-height: 17px;
+            margin-top: 24px;
+            text-align: center;
+            text-shadow: 0 0 0 white;
+            margin-bottom: 17px;
+
+        }
+
+        .TopNode .TopCenter .TopBanner li.DownLoad .DownLoad-Show .DownLoad-Show-JT {
+            position: absolute;
+            width: 13px;
+            height: 10px;
+            background: url(../image/jt-t-down.png);
+            left: 168px;
+            top: -10px;
+        }
+
+        .TopNode .TopCenter .TopBanner li.DownLoad .DownLoad-Show>a {
+            float: left;
+            width: 150px;
+            height: 44px;
+            margin-bottom: 10px;
+        }
+        
+        .TopNode .TopCenter .TopBanner li.Follow {
+            padding-left: 20px;
+            background: url(../image/lw.gif) no-repeat left center;
+        }
+
+        .TopNode .TopCenter .TopBanner li.Follow:hover .Follow-Show {
+            display: block;
+        }
+
+        .TopNode .TopCenter .TopBanner li.Follow>.Follow-Show {
+            position: absolute;
+            width: 240px;
+            height: 244px;
+            background: #fff;
+            top: 50px;
+            left: -70px;
+            z-index: 11;
+            border-radius: 2px;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+            display: none;
+        }
+
+        .TopNode .TopCenter .TopBanner li.Follow>.Follow-Show .Follow-Show-JT {
+            position: absolute;
+            width: 16px;
+            height: 10px;
+            background: url(../image/jt-t.png);
+            left: 118px;
+            top: -10px;
+        }
+
+        .TopNode .TopCenter .TopBanner li.Follow>.Follow-Show .Follow-Show-Name {
+            float: left;
+            width: 100%;
+            font-size: 13px;
+            line-height: 13px;
+            height: 13px;
+            color: #262626;
+            text-shadow: 0 0 0 white;
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        .TopNode .TopCenter .TopBanner li.Follow>.Follow-Show .Follow-Show-Title {
+            float: left;
+            width: 100%;
+            font-size: 12px;
+            height: 12px;
+            line-height: 12px;
+            text-align: center;
+            text-shadow: 0 0 0 white;
+            color: #5b5b5b;
+            margin-top: 15px;
+            
+        }
+
+        .TopNode .TopCenter .TopBanner li.Follow>.Follow-Show .Follow-Show-Ewm-T {
+            float: left;
+            margin-top: 28px;
+            margin-left: 58px;
+        }
+
+        .TopNode .TopCenter .TopBanner .Line {
+            width: 5px;
+            background: url(../image/sg.gif) no-repeat 0 19px;
+            cursor: default;
+        }
+
+        .TopNode .TopCenter .TopBanner .Bell {
+            width: 17px;
+            background: url(../image/tx.gif) no-repeat 0 center;
+        }
+
+        .TopNode .TopCenter .TopBanner .Bell:hover {
+            background: url(../image/tx-h.gif) no-repeat 0 center;
+        }
+
+        .TopNode .TopCenter .TopBanner .ShoppingCar {
+            width: 18px;
+            background: url(../image/gwc.gif) no-repeat 0 center;
+        }
+
+        .TopNode .TopCenter .TopBanner .ShoppingCar:hover {
+            background: url(../image/gwc-h.gif) no-repeat 0 center;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My {
+            position: relative;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content {
+            position: absolute;
+            width: 261px;
+            height: auto;
+            border: 1px solid #ddd;
+            padding: 7px 0;
+            left: 0;
+            top: 44px;
+            background: #fff;
+            z-index: 102;
+            display: none;
+            
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-Nearly {
+            float: left;
+            width: 261px;
+            font-size: 13px;
+            height: 22px;
+            line-height: 22px;
+            text-indent: 10px;
+            color: #303030;
+            text-shadow: 0 0 0 white;
+            cursor: auto;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-Ul {
+            float: left;
+            width: 261px;
+            height: auto;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-Ul li {
+            float: left;
+            width: 100%;
+            height: 51px;
+            margin: 0;
+
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .JT {
+            position: absolute;
+            width: 14px;
+            height: 10px;
+            left: 21px;
+            top: -9px;
+            background: url(../image/jt-user-t.png)no-repeat;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-Ul li:hover {
+            background: #f6f6f6;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-Ul li:hover a .TopBanner-My-Content-Ul-R-Name {
+            color: #39a03d;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-Ul li a {
+            float: left;
+            width: 100%;
+            height: 100%;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-Ul li a .TopBanner-My-Content-Ul-Img {
+            float: left;
+            width: 52px;
+            height: 51px;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-Ul li a .TopBanner-My-Content-Ul-Img img {
+            float: left;
+            margin: 8px 0 0 10px;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-Ul li a .TopBanner-My-Content-Ul-R-Name {
+            float: left;
+            width: 209px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #161616;
+            text-shadow: 0 0 0 white;
+            margin-top: 10px;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-Ul li a .TopBanner-My-Content-Ul-R-Now {
+            float: left;
+            width: 209px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #999;
+            text-shadow: 0 0 0 white;
+            margin-top: 5px;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-More {
+            float: left;
+            width: 261px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #565656;
+            text-shadow: 0 0 0 white;
+            background: #f6f6f6;
+        }
+
+        .TopNode .TopCenter .TopBanner .TopBanner-My .TopBanner-My-Content .TopBanner-My-Content-More:hover {
+            color: #3e9f38;
+        }
+
+        .TopNode .TopCenter .Myself {
+            height: 100%;
+            float: left;
+            position: relative;
+        }
+
+        .TopNode .TopCenter .Myself span {
+            float: left;
+            height: 100%;
+            line-height: 56px;
+            font-size: 15px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .TopNode .TopCenter .Myself img {
+            width: 34px;
+            height: 34px;
+            border: 1px solid #292d3b;
+            border-radius: 50%;
+            margin-top: 11px;
+            float: right;
+            margin-left: 7px;
+        }
+
+        .TopNode .TopCenter .Myself .Myself-Ul {
+            position: absolute;
+            width: 160px;
+            height: 218px;
+            background: #fff;
+            border: 1px solid #dbd9d8;
+            z-index: 102;
+            right: 0;
+            top: 50px;
+            margin-left: 2px;
+            padding: 8px;
+            display: none;
+        }
+
+        .TopNode .TopCenter .Myself .Myself-Ul .JT {
+            position: absolute;
+            width: 14px;
+            height: 10px;
+            right: 10px;
+            top: -9px;
+            background: url(../image/jt-user-t.png)no-repeat;
+        }
+
+        .TopNode .TopCenter .Myself .Myself-Ul li {
+            float: left;
+            width: 100%;
+            height: 36px;
+        }
+
+        .TopNode .TopCenter .Myself .Myself-Ul li:hover {
+            background: #f3f4f6;
+        }
+
+        .TopNode .TopCenter .Myself .Myself-Ul li.Bottom-Line {
+            border-bottom: 1px solid #ebecec;
+        }
+
+        .TopNode .TopCenter .Myself .Myself-Ul li .Span-Left {
+            float: left;
+            color: #98999a;
+            line-height: 36px;
+            font-size: 12px;
+        }
+
+        .TopNode .TopCenter .Myself .Myself-Ul li .Span-Right {
+            float: right;
+            color: #98999a;
+            line-height: 36px;
+            font-size: 12px;
+            color: #fd9a2f;
+            margin-right: 10px;
+        }
+
+        .TopNode .TopCenter .Myself .Myself-Ul li a {
+            float: left;
+            width: 100%;
+            height: 100%;
+            line-height: 36px;
+            font-size: 12px;
+            color: #98999a;
+            text-indent: 10px;
+        }
+
+        /* TopNode End */
+
+        /* SecondBanner */
+
+        .SecondBanner {
+            width: 1208px;
+            height: 56px;
+            margin: 0 auto;
+        }
+
+        .SecondBanner .Content>li {
+            height: 56px;
+            line-height: 66px;
+            float: left;
+            font-size: 16px;
+            color: #1e1e1e;
+            margin: 0 66px 0 0;
+            /* overflow: hidden; */
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .SecondBanner .Content>li>a {
+            color: #1e1e1e;
+        }
+
+        .SecondBanner .Content>.Click>a {
+            color: #42ab47;
+        }
+
+        .SecondBanner .Content .GreenLine {
+            width: 24px;
+            height: 3px;
+            position: absolute;
+            left: 50%;
+            margin-left: -12px;
+            bottom: 0px;
+            background: #44ad4b;
+            display: none;
+            z-index: 100;
+        }
+
+        .SecondBanner .Content .Click .GreenLine {
+            display: block;
+        }
+
+        .SecondBanner .Content>li>a:hover {
+            color: #41ab46;
+        }
+
+        .SecondBanner .Content li:hover .GreenLine {
+            display: block;
+        }
+
+        .SecondBanner .Content>.Point {
+            margin-right: 0px;
+            position: relative;
+        }
+
+        .SecondBanner .Content>.Point:hover .More {
+            display: block;
+        }
+
+        .SecondBanner .Content>.Point>a {
+            float: left;
+            width: 18px;
+            height: 4px;
+            line-height: 0;
+            margin-top: 29px;
+        }
+
+        .SecondBanner .Content>.Point>.More{
+            position: absolute;
+            width: 88px;
+            height: 135px;
+            background: #fff;
+            top: 44px;
+            left: -37px;
+            z-index: 5;
+            display: none;
+
+        }
+
+        .SecondBanner .Content>.Point>.More li {
+            float: left;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            font-size: 13px;
+            position: relative;
+        }
+
+        .SecondBanner .Content>.Point>.More li:hover a {
+            color: #4eae54;
+            font-weight: bold;
+        }
+
+        .SecondBanner .Content>.Point>.More li:hover .Right-Line {
+            display: block;
+        }
+
+        .SecondBanner .Content>.Point>.More li .Right-Line {
+            width: 2px;
+            height: 24px;
+            position: absolute;
+            right: 0;
+            top: 10.5px;
+            background: #40a34b;
+            display:none;
+            
+
+        }
+
+        .SecondBanner .Content>.Point>.More li a {
+            float: left;
+            width: 100%;
+            height: 100%;
+            color: #393939;
+        }
+
+        .SecondBanner .Content>li .Zc-Ol {
+            float: left;
+            position: absolute;
+            width: 88px;
+            z-index: 99;
+            background: #fff;
+            top: 53px;
+            left: 0;
+            box-shadow: 0 0 5px #ccc;
+            display: none;
+        }
+
+        .SecondBanner .Content>li .Zc-Ol li {
+            float: left;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+        }
+
+        .SecondBanner .Content>li .Zc-Ol li:hover a {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .SecondBanner .Content>li .Zc-Ol li a {
+            float: left;
+            width: 100%;
+            height: 100%;
+            font-size: 13px;
+            color: #7f7f7f;
+            text-indent: 17px;
+        }
+        
+
+
+        /* SecondBanner End  */
+
+        /* Picture-rotation */
+
+        .Picture-rotation {
+            height: 360px;
+            background: #f15c5a;
+        }
+
+        .Picture-rotation .Picture-Outline {
+            width: 1208px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .Picture-rotation .Picture-Outline .Picture {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+        }
+
+        .Picture-rotation .Picture-Outline .Picture li {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0;
+            display: none;
+            transition: 0.49s;
+        }
+
+        .Picture-rotation .Picture-Outline .Picture li.Chosen {
+            opacity: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .Picture-rotation .Picture-Outline .Picture img {
+            float: left;
+        }
+
+        .Picture-rotation .Picture-Outline .Picture-Choice {
+            width: 280px;
+            height: 320px;
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 3px;
+        }
+
+
+        .Picture-rotation .Picture-Outline .Picture-Choice li {
+            text-indent: 20px;
+            height: 40px;
+            float: left;
+            font-size: 16px;
+            line-height: 40px;
+        }
+
+        .Picture-rotation .Picture-Outline .Picture-Choice li a {
+            height: 100%;
+            float: left;
+            color: #aaa;
+        }
+
+        .Picture-rotation .Picture-Outline .Picture-Choice li a:hover {
+            color: #30e043;
+        }
+
+
+        .Picture-rotation .Picture-Outline .Picture-Choice li.First {
+            margin-top: 22px;
+        }
+
+        .Picture-rotation .Picture-Outline .Picture-Choice li.Chosen {
+            background: url(../image/slider-jt.png)no-repeat 8px center;
+        }
+        .Picture-rotation .Picture-Outline .Picture-Choice li.Chosen a {
+            color: #30e043;
+        }
+
+        
+
+        /* Picture rotation End */
+
+        /* Teacher-Open */
+
+        .Teacher-Open {
+            width: 1206px;
+            height: 213px;
+            margin: 35px auto 0;
+            position: relative;
+        }
+
+        .Teacher-Open h2 {
+            font-size: 24px;
+            float: left;
+            height: 24px;
+            line-height: 24px;
+        }
+
+        .Teacher-Open .More {
+            background: url(../image/more-jt.png) no-repeat right center;
+            font-size: 14px;
+            color: #535353;
+            float: left;
+            position: absolute;
+            right: 1px;
+            top: 5px;
+            padding-right: 27px;
+        }
+
+        .Teacher-Open .Teacher-Information {
+            width: 1128px;
+            height: 164px;
+            float: left;
+            margin-left: 38px;
+            margin-top: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .Teacher-Open .Teacher-Information-Card {
+            width: 1612px;
+            height: 100%;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            transition: 0.8s;
+
+        }
+
+        .Teacher-Open .Teacher-Information-Card li {
+            float: left;
+            width: 351px;
+            height: 141px;
+            margin-right: 25px;
+            border: 1px solid #f1f1f1;
+            border-radius: 6px;
+
+        }
+
+        .Teacher-Open .Teacher-Information-Card li a {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .Teacher-Open .Teacher-Information-Card li:hover {
+            box-shadow: 0 0 8px #cccccc;
+        }
+
+
+        .Teacher-Open .Teacher-Information-Card li .Teacher-Card {
+            width: 112px;
+            height: 100%;
+            float: left;
+        }
+
+        .Teacher-Open .Teacher-Information-Card li .Teacher-Card img {
+            float: left;
+            margin-top: 12px;
+            margin-left: 12px;
+        }
+
+        .Teacher-Open .Teacher-Information-Card li .Time {
+            float: left;
+            width: 239px;
+            height: 14px;
+            line-height: 14px;
+            font-style: 14px;
+            color: #333;
+            margin-top: 16px;
+
+        }
+
+        .Teacher-Open .Teacher-Information-Card li .Title {
+            float: left;
+            width: 239px;
+            font-size: 16px;
+            height: 16px;
+            line-height: 16px;
+            color: #2a2a2a;
+            margin-top: 14px;
+        }
+
+        .Teacher-Open .Teacher-Information-Card li .Teacher-Name {
+            float: left;
+            height: 23px;
+            width: 239px;
+            font-size: 14px;
+            line-height: 23px;
+            color: #3d3d3d;
+            margin-top: 11px;
+        }
+
+        .Teacher-Open .Teacher-Information-Card li .Teacher-Name .Name {
+            float: left;
+            height: 100%;
+        }
+
+        .Teacher-Open .Teacher-Information-Card li .Teacher-Name .Title-Box {
+            float: left;
+            width: 56px;
+            height: 21px;
+            border: 1px solid #fadfa9;
+            border-radius: 3px;
+            background: #fefaf2;
+            color: #f19400;
+            font-size: 12px;
+            text-align: center;
+            line-height: 21px;
+            margin-left: 17px;
+        }
+
+        .Teacher-Open .Teacher-Information-Card li .Describe {
+            width: 239px;
+            float: left;
+            height: 12px;
+            line-height: 12px;
+            font-size: 12px;
+            color: #575757;
+            margin-top: 8px;
+        }
+
+        .Teacher-Open .T-Left {
+            width: 14px;
+            height: 23px;
+            position: absolute;
+            background: url(../image/l-jt.png);
+            left: 3px;
+            top: 110px;
+
+        }
+
+        .Teacher-Open .T-Right {
+            width: 14px;
+            height: 23px;
+            position: absolute;
+            background: url(../image/r-jt.png);
+            right: 3px;
+            top: 110px;
+
+        }
+
+        /* Teacher-Open End */
+
+        /* Class-Live */
+
+        .Class-Live {
+            margin-top: 22px;
+            height: 287px;
+        }
+
+        .Class-Live .LiveNode {
+            width: 1254px;
+            height: 248px;
+            float: left;
+            margin-top: 15px;
+        }
+
+        .Class-Live .LiveNode li {
+            width: 394px;
+            height: 124px;
+            float: left;
+            border-radius: 3px;
+            margin-right: 24px;
+            margin-left: -12px;
+            margin-bottom: 4px;
+        }
+
+        .Class-Live .LiveNode li .No-Right {
+            margin-right: 0px;
+        }
+
+        .Class-Live .LiveNode li:hover {
+            box-shadow: 0 0 5px #cccccc;
+        }
+
+        .Class-Live .LiveNode li a {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .Class-Live .LiveNode li a .Teacher-Photo {
+            float: left;
+            width: 112px;
+            height: 100%;
+        }
+
+        .Class-Live .LiveNode li a .Teacher-Photo img {
+            float: left;
+            margin-top: 12px;
+            margin-left: 12px;
+            border-radius: 50%;
+
+        }
+
+        .Class-Live .LiveNode li a .Time {
+            width: 282px;
+            float: left;
+            height: 13px;
+            line-height: 13px;
+            font-size: 13px;
+            margin-top: 14px;
+            color: #070707;
+        }
+
+        .Class-Live .LiveNode li a .Time span {
+            float: left;
+        }
+
+        .Class-Live .LiveNode li a .Time .Warn {
+            color: #00a94e;
+            margin-left: 9px;
+        }
+
+        .Class-Live .LiveNode li a .Time .Live-Time {
+            padding-right: 13px;
+            background: url(../image/line-l.png) no-repeat right center;
+        }
+
+        .Class-Live .LiveNode li a .Live-Name {
+            float: left;
+            width: 266px;
+            color: #212121;
+            line-height: 24px;
+            font: 16px;
+            margin-top: 11px;
+            padding-right: 16px;
+        }
+
+        .Class-Live .LiveNode li a .Teacher-Name {
+            float: left;
+            width: 282px;
+            font-size: 11px;
+            height: 11px;
+            line-height: 11px;
+            color: #606060;
+            margin-top: 11px;
+        }
+
+
+        /* Class-Live End */
+
+        /* System */
+
+        .System {
+            width: 1206px;
+            height: 164px;
+            margin: 32px auto 0;
+        }
+
+        .System h2 {
+            font-size: 24px;
+            height: 24px;
+            line-height: 24px;
+            float: left;
+
+        }
+
+        .System .Title-1 {
+            float: left;
+            font-size: 14px;
+            line-height: 14px;
+            height: 14px;
+            color: #575757;
+            margin-left: 13px;
+            margin-top: 9px;
+        }
+
+        .System .System-Learning {
+            float: left;
+            width: 100%;
+            height: 120px;
+            margin-top: 20px;
+
+        }
+
+        .System .System-Learning li {
+            height: 100%;
+            width: 180px;
+            margin-right: 25px;
+            float: left;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .System .System-Learning li.No-Right {
+            margin-right: 0;
+        }
+
+        .System .System-Learning li a {
+            float: left;
+            width: 100%;
+            height: 100%;
+        }
+
+        .System .System-Learning li img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* System End */
+
+        /* Major */
+
+        .Major {
+            width: 1206px;
+            height: 260px;
+            margin: 43px auto 0;
+            position: relative;
+        }
+
+        .Major h2 {
+            font-size: 24px;
+            height: 24px;
+            line-height: 24px;
+            float: left;
+        }
+
+        .Major .More {
+            background: url(../image/more-jt.png) no-repeat right center;
+            font-size: 14px;
+            color: #535353;
+            float: left;
+            position: absolute;
+            right: 1px;
+            top: 5px;
+            padding-right: 27px;
+        }
+
+        .Major .Major-Ul {
+            width: 1206px;
+            height: 223px;
+            float: left;
+            margin-top: 15px;
+        }
+
+        .Major .Major-Ul li {
+            height: 100%;
+            width: 286px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .Major .Major-Ul li:hover img {
+            transform: scale(1.2);
+        }
+
+        .Major .Major-Ul li.No-Right {
+            margin-right: 0px;
+        }
+
+
+        .Major .Major-Ul li a {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .Major .Major-Ul li a .Major-Img {
+            width: 100%;
+            height: 100%;
+            transition: 0.7s;
+        }
+
+        .Major .Major-Ul li .Major-Ul-Outer {
+            width: 100%;
+            height: 161px;
+            float: left;
+            border-radius: 3px 3px 0 0;
+            overflow: hidden;
+
+        }
+
+        .Major .Major-Ul li a .Major-Content {
+            float: left;
+            width: 284px;
+            height: 61px;
+            border: 1px solid #f0f0f0;
+            border-top: none;
+            border-radius: 0 0 3px 3px;
+
+        }
+
+        .Major .Major-Ul li a .Major-Content .Major-Content-Name {
+            height: 16px;
+            line-height: 16px;
+            float: left;
+            font-size: 16px;
+            margin: 10px 0 0 10px;
+            color: #0b0b0b;
+        }
+
+        .Major .Major-Ul li a .Major-Content .Major-Content-Title {
+            height: 13px;
+            line-height: 13px;
+            float: left;
+            font-size: 13px;
+            margin: 8px 0 0 10px;
+            color: #656565;
+        }
+
+        /* Major End */
+
+        /* Seckill */
+
+        .Seckill {
+            width: 1206px;
+            height: 311px;
+            margin: 51px auto;
+        }
+
+        .Seckill h2 {
+            height: 24px;
+            line-height: 24px;
+            font-size: 24px;
+            float: left;
+        }
+
+        .Seckill .Seckill-Top-Ul {
+            width: 100%;
+            height: 40px;
+            float: left;
+            margin-top: 21px;
+        }
+
+        .Seckill .Seckill-Top-Ul li {
+            float: left;
+            width: 200px;
+            height: 100%;
+            margin-right: 1px;
+            background: #edf7ee;
+            color: #444344;
+            font-size: 13px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            text-shadow: 0 0 1px #fff;
+        }
+
+        .Seckill .Seckill-Top-Ul li a {
+            float: left;
+            width: 100%;
+            height: 100%;
+        }
+
+        .Seckill .Seckill-Top-Ul li.First {
+            border-radius: 2px 0 2px 0;
+        }
+
+        .Seckill .Seckill-Top-Ul li.No-Right {
+            margin-right: 0px;
+        }
+
+        .Seckill .Seckill-Top-Ul li.Click {
+            background: #4aaf4f;
+            color: #fafdfa;
+        }
+
+        .Seckill .Seckill-Content {
+            float: left;
+            margin-top: 12px;
+            width: 100%;
+            height: 216px;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        .Seckill .Seckill-Content .Show {
+            display: block;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li {
+            float: left;
+            height: 100%;
+            position: relative;
+            width: 225px;
+            margin-right: 20px;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li.No-Right {
+            margin-right: 0;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li img {
+            float: left;
+            width: 100%;
+            height: 125px;
+            border-radius: 3px;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li .Seckill-Content-Ul-Name {
+            height: 13px;
+            width: 100%;
+            line-height: 13px;
+            font-style: 13px;
+            color: #4a4a4a;
+            float: left;
+            margin-top: 10px;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li .Seckill-Content-Ul-School {
+            float: left;
+            width: 100%;
+            height: 12px;
+            line-height: 12px;
+            font-style: 12px;
+            color: #6b6b6b;
+            margin-top: 13px;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li .Seckill-Content-Ul-Price {
+            margin-top: 19px;
+            float: left;
+            color: #ff291e;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li .Seckill-Content-Ul-Price .P1 {
+            float: left;
+            height: 13px;
+            line-height: 13px;
+            font-size: 13px;
+            margin-top: 7px;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li .Seckill-Content-Ul-Price .P2 {
+            float: left;
+            font-size: 24px;
+            line-height: 24px;
+            height: 24px;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li .Old {
+            color: #7c7c7c;
+            margin-left: 12px;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li .Old .P1 {
+            text-decoration: line-through;
+            font-size: 13px;
+            height: 13px;
+            line-height: 13px;
+            margin-top: 7px;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li .Old .P2 {
+            text-decoration: line-through;
+            font-size: 13px;
+            height: 13px;
+            line-height: 13px;
+            margin-top: 7px;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li .Seckill-Num {
+            float: left;
+            width: 60px;
+            height: 20px;
+            border: 1px solid #ff5819;
+            color: #ff0000;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 3px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 13px;
+        }
+
+        .Seckill .Seckill-Content .Seckill-Content-Ul li .Click {
+            color: #999;
+            border: 1px dashed #999;
+        }
+
+        
+
+        /* Seckill End */
+
+        /* Mask */
+
+        .Mask {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 200;
+            display: none;
+        }
+
+        /* Mask End */
+
+        /* Interest */
+
+        .Interest {
+            width: 990px;
+            height: auto;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -495px;
+            margin-top: -232.5px;
+            background: #fff;
+            z-index: 201;
+            border-radius: 2px;
+            display: none;
+            padding-bottom: 40px;
+
+        }
+
+        .Interest .Interest-Name {
+            float: left;
+            width: 100%;
+            height: 19px;
+            margin-top: 43px;
+
+        }
+
+        .Interest .Interest-Name span {
+            float: left;
+
+        }
+
+        .Interest .Interest-Name span.Interest-Name-N1 {
+            font-size: 19px;
+            line-height: 19px;
+            height: 19px;
+            color: #1c1c1c;
+            margin-left: 40px;
+            margin-right: 26px;
+        }
+
+        .Interest .Interest-Name span.Interest-Name-N2 {
+            font-size: 14px;
+            line-height: 14px;
+            height: 14px;
+            color: #616161;
+            margin-top: 5px;
+
+        }
+
+        .Interest .Interest-Ul {
+            float: left;
+            width: 910px;
+            height: 40px;
+            border-bottom: 1px solid #e0e0e0;
+            margin-top: 26px;
+            margin-left: 40px;
+        }
+
+        .Interest .Interest-Ul li {
+            float: left;
+            height: 100%;
+            line-height: 40px;
+            color: #666;
+            font-size: 16px;
+            position: relative;
+            cursor: pointer;
+            margin-right: 32px;
+        }
+
+        .Interest .Interest-Ul li.No-Right {
+            margin-right: 0px;
+        }
+
+        .Interest .Interest-Ul li.Click div {
+            float: left;
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            background: #37a43e;
+        }
+
+        .Interest .Interest-Content {
+            float: left;
+            width: 910px;
+            height: 150px;
+            border-bottom: 1px solid #e0e0e0;
+            margin-left: 40px;
+        }
+
+        .Interest .Interest-Content ul.Show {
+            display: block;
+        }
+
+        .Interest .Interest-Content ul {
+            float: left;
+            width: 100%;
+            height: 100%;
+            display: none;
+
+        }
+
+        .Interest .Interest-Content ul li {
+            float: left;
+            font-size: 13px;
+            color: #4e4e4e;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            padding: 0 20px;
+            border: 1px solid #d1d1d1;
+            border-radius: 16px;
+            cursor: pointer;
+            margin-top: 21px;
+            margin-right: 20px;
+        }
+
+        .Interest .Interest-Content ul li.Click {
+            background: #4eae54;
+            color: #fbf5fb;
+        }
+
+        .Interest .Interest-Chonse {
+            float: left;
+            width: 910px;
+            margin-left: 40px;
+            height: auto;
+        }
+
+        .Interest .Interest-Chonse li.Text {
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+            border: none;
+            padding: 0;
+            margin-right: 14px;
+        }
+
+        .Interest .Interest-Chonse li {
+            float: left;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+            padding: 0 16px;
+            border: 1px solid #d1d1d1;
+            border-radius: 14px;
+            margin-top: 19px;
+            margin-right: 16px;
+        }
+
+        .Interest .Interest-Chonse li img {
+            cursor: pointer;
+            margin-left: 9px;
+        }
+
+        .Interest .Close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: url(../image/bg-closed.gif)no-repeat;
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+        }
+
+        .Interest .Close:hover {
+            background: url(../image/bg-colose-h.gif)no-repeat;
+        }
+
+        .Interest #DOWN{
+            float: left;
+            width: 180px;
+            height: 44px;
+            line-height: 44px;
+            color: #fff;
+            text-align: center;
+            font-size: 15px;
+            background: #4eae54;
+            border-radius: 22px;
+            margin-left: 405px;
+            margin-top: 52px;
+            cursor: pointer;
+        }
+
+        /* .Interest .Close:hover {} */
+
+        /* Interest End */
+
+        /* Change */
+
+        .Change {
+            width: 1206px;
+            height: 60px;
+            line-height: 60px;
+            background: #edf7ee;
+            margin: 40px auto 0;
+            border-radius: 2px;
+
+
+        }
+
+        .Change .Change-Interest {
+            float: left;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .Change .Change-Interest-1 {
+            float: left;
+            font-size: 13px;
+            color: #60ba65;
+            margin-left: 21px;
+            background: url(../image/in-jt.gif)no-repeat right center;
+            padding-right: 15px;
+            cursor: pointer;
+        }
+
+
+        /* Change End */
+
+        /* Web-Content */
+        .Web-Content {
+            height: 216px;
+            margin-top: 23px;
+        }
+
+        .Web-Content .Seckill-Content-Ul {
+            float: left;
+            margin-top: 19px;
+            width: 100%;
+            height: 173px;
+        }
+
+        .Web-Content .Seckill-Content-Ul .Seckill-Content-Ul-Outer {
+            float: left;
+            height: 125px;
+            border-radius: 3px;
+            overflow: hidden;
+
+        }
+
+        .Web-Content .Seckill-Content-Ul li {
+            float: left;
+            height: 100%;
+            position: relative;
+            width: 225px;
+            margin-right: 20px;
+        }
+
+        .Web-Content .Seckill-Content-Ul li:hover img {
+            transform: scale(1.2);
+        } 
+
+        .Web-Content .Seckill-Content-Ul li.No-Right {
+            margin-right: 0px;
+        }
+
+        .Web-Content .Seckill-Content-Ul li img {
+            width: 100%;
+            height: 100%;
+            transition: 0.7s;
+
+        }
+
+        .Web-Content .Seckill-Content-Ul li .Seckill-Content-Ul-Name {
+            height: 13px;
+            width: 100%;
+            line-height: 13px;
+            font-style: 13px;
+            color: #4a4a4a;
+            float: left;
+            margin-top: 10px;
+        }
+
+        .Web-Content .Seckill-Content-Ul li .Seckill-Content-Ul-School {
+            float: left;
+            width: 100%;
+            height: 12px;
+            line-height: 12px;
+            font-style: 12px;
+            color: #6b6b6b;
+            margin-top: 13px;
+        }
+
+        .Web-Content .Seckill-Content-Ul li a {
+            float: left;
+            width: 100%;
+            height: 100%;
+        }
+
+        .Web-Content .TOP40 {
+            margin-top: 47px;
+        }
+
+        /* Web-Content End */
+
+        /* Series */
+        
+        .Series {
+            height: 212px;
+        }
+
+        .Series  .Series-Ul {
+             float: left;
+             width: 100%;
+             height: 170px;
+             margin-top: 19px;
+        }
+
+        .Series  .Series-Ul li {
+             float: left;
+             width: 286px;
+             height: 100%;
+             border-radius: 3px;
+             overflow: hidden;
+             margin-right: 20px;
+        }
+
+        .Series  .Series-Ul li:hover img {
+            transform: scale(1.2);
+        }
+        .Series  .Series-Ul li img {
+            width: 100%;
+            height: 100%;
+            transition: 0.7s;
+        }
+
+        .Series  .Series-Ul li.No-Right {
+             margin-right: 0;
+        }
+
+        .Series  .Series-Ul li a {
+             float: left;
+             width: 100%;
+             height: 100%;
+             position: relative;
+        }
+
+        .Series  .Series-Ul li .Out-Border {
+             width: 238px;
+             height: 68px;
+             border: 4px solid #fff;
+             position: absolute;
+             left: 20px;
+             bottom: 18px;
+
+        }
+
+        .Series  .Series-Ul li .Inside-Border {
+             width: 236px;
+             height: 66px;
+             background: rgba(255,255,255,0.95);
+             position: absolute;
+             z-index: 3;
+             left: 25px;
+             bottom: 23px;
+        }
+
+        .Series  .Series-Ul li .Inside-Border h3 {
+             float: left;
+             width:100%;
+             height: 17px;
+             font-size: 17px;
+             line-height: 17px;
+             text-align: center;
+             color: #0c0c0c;
+             margin-top: 17px;
+        }
+
+        .Series  .Series-Ul li .Inside-Border .Inside-Border-Title {
+             float: left;
+             width: 100%;
+             height: 13px;
+             line-height: 13px;
+             font-size: 13px;
+             margin-top: 10px;
+             text-align: center;
+             color: #666;
+
+        }
+
+        .TOP43 {
+            margin-top: 43px;
+        }
+
+        /* Series End */
+
+        /* Advertisement */
+
+        .Advertisement {
+            width: 1206px;
+            height: 130px;
+            margin: 59px auto 0;
+            
+        }
+
+        .Advertisement a {
+            float: left;
+            height: 100%;
+        }
+
+
+
+        .Advertisement .Advertisement-Left {
+            margin-right: 20px;
+
+        }
+        
+        /* Advertisement End */
+
+        /* Footer */
+
+        .Footer {
+            margin-top: 26px;
+            width: 100%;
+            height: 184px;
+            background: #474443;
+        }
+
+        .Footer .Footer-Content{
+            width: 1206px;
+            height: 100%;
+            margin: 0 auto;
+
+        }
+
+        .Footer .Footer-Content .Footer-Content-Left {
+            float: left;
+            width: 972px;
+            height: 100%;
+
+        }
+
+        .Footer .Footer-Content .Footer-Content-Left .Footer-Content-Left-Text {
+            float: left;
+            width: 100%;
+            color: #fff;
+            font-size: 13px;
+            height: 13px;
+            line-height: 13px;
+            margin-top: 34px;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Left .Footer-Content-Left-Ul {
+            float: left;
+            width: 100%;
+            height: 13px;
+            line-height: 13px;
+            font-size: 13px;
+            margin-top: 18px;
+
+        }
+
+        .Footer .Footer-Content .Footer-Content-Left .Footer-Content-Left-Ul li {
+            float: left;
+            height: 100%;
+            margin-right: 22px;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Left .Footer-Content-Left-Ul li a {
+            color: #fff;
+            font-family: "Arial","Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Left .Footer-Content-Left-Ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Left .Footer-Content-Left-BottomText {
+            float: left;
+            margin-top: 24px;
+            width: 100%;
+            font-size: 13px;
+            height: 13px;
+            line-height: 13px;
+            color: #9d9d9d;
+
+        }
+
+        .Footer .Footer-Content .Footer-Content-Left .Footer-Content-Left-BottomText span {
+            float: left;
+            margin-right: 21px;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Left .Footer-Content-Left-BottomText a {
+            color: #9d9d9d;
+            width: 100%;
+            height: 100%;
+            margin-left: 3px;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Left .Footer-Content-Left-BottomText a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right {
+            float: left;
+            width: 234px;
+            height: 100%;
+
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Download {
+            float: left;
+            height: 34px;
+            width: 100%;
+            margin-top: 28px;
+
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Download a {
+            float: left;
+            margin-right: 7px;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Download a.No-Right {
+            margin-right: 0;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Follow {
+           height: 30px;
+           line-height: 30px;
+           font-size: 13px;
+           width: 100%;
+           float: left;
+           margin-top: 20px; 
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Follow span {
+            float: left;
+            height: 100%;
+            margin-left:86px;
+            color: #ffffff; 
+            margin-right:7px;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Follow a {
+            float: left;
+            margin-right: 16px;
+            position: relative;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Follow a.No-Right {
+            margin-right: 0;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Follow .Footer-Content-Right-Follow-Wx-Show {
+            float: left;
+            width: 240px;
+            height: 247px;
+            background:url(../image/ewm.gif)no-repeat center 87px, #fff;
+            position: absolute;
+            top: -258px;
+            left: -110px;
+            border-radius: 3px;
+            box-shadow: 0 0 5 #ccc;
+            display: none;
+        }
+        
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Follow .Footer-Content-Right-Follow-Wx:hover .Footer-Content-Right-Follow-Wx-Show {
+            display: block;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Follow .Footer-Content-Right-Follow-Wx-Show .Footer-Content-Right-Follow-Wx-Show-Sjx {
+            width: 17px;
+            height: 9px;
+            position: absolute;
+            background: url(../image/sjx.gif) no-repeat ;
+            left: 50%;
+            margin-left: -6.5px;
+            bottom: -9px;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Follow .Footer-Content-Right-Follow-Wx-Show .Footer-Content-Right-Follow-Wx-Show-Text {
+            float: left;
+            width: 100%;
+            height: 13px;
+            font-size: 13px;
+            line-height: 13px;
+            text-align: center;
+            color: #000;
+            margin-top: 19px;
+        }
+
+        .Footer .Footer-Content .Footer-Content-Right .Footer-Content-Right-Follow .Footer-Content-Right-Follow-Wx-Show .Footer-Content-Right-Follow-Wx-Show-Title {
+            float: left;
+            width: 100%;
+            height: 11px;
+            font-size: 11px;
+            line-height: 11px;
+            text-align: center;
+            color: #474747;
+            margin-top: 16px;
+        }
+        /* Footer End  */
+
+        /* Window-Show */
+
+        .Window-Show {
+            width: 61px;
+            height: 327px;
+            position: fixed;
+            right: 18px;
+            top: 320px;
+            display: none;
+        }
+
+        .Window-Show .Window-Show-Top {
+            position: absolute;
+            top: 0;
+        }
+
+        .Window-Show .Window-Show-Ul {
+            float: left;
+            width: 47px;
+            height: 220px;
+            border: 1px solid #d1d1d1;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .Window-Show .Window-Show-Ul .Window-Show-Ul-Text {
+            float: left;
+            width: 100%;
+            height: 58px;
+
+        }
+
+        .Window-Show .Window-Show-Ul .Window-Show-Ul-Line {
+            float: left;
+            width: 100%;
+            height: 23px;
+            position: relative;
+
+        }
+
+        .Window-Show .Window-Show-Ul .Window-Show-Ul-Line .Line {
+            width: 39px;
+            height: 1px;
+            background: #cecece;
+            position: absolute;
+            left: 4px;
+            top: 11px;
+        }
+        
+        .Window-Show .Show-M {
+            background: url(../image/show-m.gif) no-repeat center center ;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+        }
+
+        .Window-Show .Show-Mobile {
+            background: url(../image/show-mobile.gif) no-repeat center center ;
+            position: relative;
+        }
+        
+        .Window-Show .Show-T {
+            background: url(../image/show-t.gif) no-repeat center center ;
+            border-radius:  0 0 5px 5px;
+            overflow: hidden;
+        }
+
+        .Window-Show .Window-Show-Ul .Window-Show-Ul-Text .Window-Show-Ul-Text-Name {
+            float: left;
+            width: 25px;
+            height: 49px;
+            background: #359c2e;
+            color: #f8fbf7;
+            font-size: 12px;
+            line-height: 21px;
+            padding-top: 9px;
+            padding-left: 11px;
+            padding-right: 11px;
+            display: none;
+        }
+
+        .Window-Show .Window-Show-Ul .Window-Show-Ul-Text:hover .Window-Show-Ul-Text-Name {
+            display: block;
+        }
+
+        .Window-Show .Window-Show-Ul .Show-Mobile .Window-Show-Ul-Text-Name-ShowOut {
+            width: 212px;
+            height: 133px;
+            border: 1px solid #d9d9d3;
+            position: absolute;
+            left: -215px;
+            top: -30px;
+            background: #fff;
+            display: none;
+
+        }
+
+        .Window-Show .Window-Show-Ul .Show-Mobile .Window-Show-Ul-Text-Name-ShowOut .Window-Show-Ul-Text-Name-ShowOut-Jt {
+            float: left;
+            width: 5px;
+            height: 14px;
+            background: url(../image/alert-jt.png);
+            position: absolute;
+            right: -5px;
+            top: 50%;
+            margin-top: -7px;
+
+        }
+
+        .Window-Show .Window-Show-Ul .Show-Mobile .Window-Show-Ul-Text-Name-ShowOut .Window-Show-Ul-Text-Name-ShowOut-Ewm {
+            float: left;
+            height: 110px;
+            width: 85px;
+            margin-top: 12px;
+            margin-left: 14px;
+            
+
+
+        }
+
+        .Window-Show .Window-Show-Ul .Show-Mobile .Window-Show-Ul-Text-Name-ShowOut .Window-Show-Ul-Text-Name-ShowOut-Ewm img {
+            float: left;
+        }
+
+        .Window-Show .Window-Show-Ul .Show-Mobile .Window-Show-Ul-Text-Name-ShowOut .Window-Show-Ul-Text-Name-ShowOut-Ewm p {
+            float: left;
+            width: 100%;
+            height: 13px;
+            font-size: 13px;
+            line-height: 13px;
+            color: #4c4c4c;
+            text-align: center;
+            margin-top: 11px;
+        }
+
+        .Window-Show .Window-Show-Ul .Show-Mobile .Window-Show-Ul-Text-Name-ShowOut .Ml15 {
+            margin-left: 15px;
+        }
+
+
+        .Window-Show .Show-Mobile:hover .Window-Show-Ul-Text-Name-ShowOut {
+            display: block;
+        }
+
+
+
+        
+
+
+
+
+        /* Window-Show End */
